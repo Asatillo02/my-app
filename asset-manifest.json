@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/master/static/css/main.3a30d1a9.css",
-    "main.js": "/master/static/js/main.91e7862a.js",
-    "static/js/453.ed3810f9.chunk.js": "/master/static/js/453.ed3810f9.chunk.js",
-    "index.html": "/master/index.html",
-    "main.3a30d1a9.css.map": "/master/static/css/main.3a30d1a9.css.map",
-    "main.91e7862a.js.map": "/master/static/js/main.91e7862a.js.map",
-    "453.ed3810f9.chunk.js.map": "/master/static/js/453.ed3810f9.chunk.js.map"
+    "main.css": "/Skovorodka-React/static/css/main.3a30d1a9.css",
+    "main.js": "/Skovorodka-React/static/js/main.d724a8b6.js",
+    "static/js/453.ed3810f9.chunk.js": "/Skovorodka-React/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/Skovorodka-React/index.html",
+    "main.3a30d1a9.css.map": "/Skovorodka-React/static/css/main.3a30d1a9.css.map",
+    "main.d724a8b6.js.map": "/Skovorodka-React/static/js/main.d724a8b6.js.map",
+    "453.ed3810f9.chunk.js.map": "/Skovorodka-React/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a30d1a9.css",
-    "static/js/main.91e7862a.js"
+    "static/js/main.d724a8b6.js"
   ]
 }
