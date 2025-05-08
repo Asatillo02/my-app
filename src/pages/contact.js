@@ -44,7 +44,7 @@ function Contact() {
     <div>
       <header>
         <div className="logo">
-          <img src="/images/burger.png" height="100" alt="Restaurant Logo" />
+          <img src={`${process.env.PUBLIC_URL}/images/burger.png`} height="100" alt="Restaurant Logo" />
         </div>
         <div className="hamburger" onClick={toggleMenu}>
           &#9776;
@@ -58,7 +58,10 @@ function Contact() {
           </ul>
           <div className="cart">
             <Link to="/cart">
-              <img src="/images/shopping_cart.png" alt="cart" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/shopping_cart.png`}
+                alt="cart"
+              />
             </Link>
             <span className="cart-value">{cart}</span> {}
           </div>

@@ -97,7 +97,7 @@ function Menu() {
     <div>
       <header>
         <div className="logo">
-          <img src="/images/burger.png" height="100" alt="Restaurant Logo" />
+          <img src={`${process.env.PUBLIC_URL}/images/burger.png`} height="100" alt="Restaurant Logo" />
         </div>
         <div className="hamburger" onClick={toggleMenu}>
           &#9776;
@@ -111,7 +111,7 @@ function Menu() {
           </ul>
           <div className="cart">
             <Link to="/cart">
-              <img src="/images/shopping_cart.png" alt="cart" />
+              <img src={`${process.env.PUBLIC_URL}/images/shopping_cart.png`} alt="Cart" />
             </Link>
             <span className="cart-value">{cart}</span>
           </div>
@@ -128,7 +128,7 @@ function Menu() {
                 <div key={item.name}>
                   <h3>{item.name}</h3>
                   <img
-                    src={item.image}
+                    src={`${process.env.PUBLIC_URL}${item.image}`}
                     alt={item.name}
                     onClick={() => addToCart(item)}
                   />

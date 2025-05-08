@@ -14,7 +14,11 @@ function About() {
     <div>
       <header>
         <div className="logo">
-          <img src="/images/burger.png" height="100" alt="Restaurant Logo" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/burger.png`}
+            height="100"
+            alt="Restaurant Logo"
+          />
         </div>
 
         <div className="hamburger" onClick={toggleMenu}>
@@ -30,9 +34,12 @@ function About() {
           </ul>
           <div className="cart">
             <Link to="/cart">
-              <img src="/images/shopping_cart.png" alt="cart" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/shopping_cart.png`}
+                alt="cart"
+              />
             </Link>
-            <span className="cart-value">{cart}</span> {}
+            <span className="cart-value">{cart}</span>
           </div>
         </nav>
       </header>
@@ -58,7 +65,10 @@ function About() {
             <p><strong>Mon-Sun: 11AM to 10PM</strong></p>
           </div>
         </div>
-        <img src="/images/outside.jpg" alt="exterior" />
+        <img
+          src={`${process.env.PUBLIC_URL}/images/outside.jpg`}
+          alt="exterior"
+        />
       </section>
     </div>
   );

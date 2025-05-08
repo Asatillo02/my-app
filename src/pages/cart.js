@@ -21,7 +21,11 @@ function Cart() {
     <div>
       <header>
         <div className="logo">
-          <img src="/images/burger.png" height="100" alt="Restaurant Logo" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/burger.png`}
+            height="100"
+            alt="Restaurant Logo"
+          />
         </div>
         <div className="hamburger">&#9776;</div>
         <nav>
@@ -33,7 +37,10 @@ function Cart() {
           </ul>
           <div className="cart">
             <a href="/cart">
-              <img src="/images/shopping_cart.png" alt="cart" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/shopping_cart.png`}
+                alt="cart"
+              />
             </a>
             <span className="cart-value">{cart}</span>
           </div>
@@ -59,17 +66,24 @@ function Cart() {
             ) : (
               cartItems.map((item, idx) => (
                 <tr key={idx}>
-                  <td><img src={item.image} alt={item.name} height="50" /></td>
+                  <td>
+                    <img
+                      src={`${process.env.PUBLIC_URL}${item.image}`}
+                      alt={item.name}
+                      height="50"
+                    />
+                  </td>
                   <td>{item.name}</td>
                   <td>${Number(item.price).toFixed(2)}</td>
-                  <td>{item.quantity}
-                      <br />
-                      <button
-                        className="remove-button"
-                        onClick={() => removeFromCart(item.id)}>
-                        Remove
-                      </button>
-
+                  <td>
+                    {item.quantity}
+                    <br />
+                    <button
+                      className="remove-button"
+                      onClick={() => removeFromCart(item.id)}
+                    >
+                      Remove
+                    </button>
                   </td>
                 </tr>
               ))

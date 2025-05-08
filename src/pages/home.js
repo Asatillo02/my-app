@@ -8,11 +8,11 @@ function Home() {
   const { cart } = useGlobalLogic();
 
   const images = [
-    "/images/skovorodka-dining-room.jpg",
-    "/images/entrance.jpg",
-    "/images/caption.jpg",
-    "/images/interior-of-restaurant.jpg",
-    "/images/photo0jpg.jpg"
+    `${process.env.PUBLIC_URL}/images/skovorodka-dining-room.jpg`,
+    `${process.env.PUBLIC_URL}/images/entrance.jpg`,
+    `${process.env.PUBLIC_URL}/images/caption.jpg`,
+    `${process.env.PUBLIC_URL}/images/interior-of-restaurant.jpg`,
+    `${process.env.PUBLIC_URL}/images/photo0jpg.jpg`
   ];
 
   const toggleMenu = () => {
@@ -27,7 +27,11 @@ function Home() {
     <div>
       <header className="header">
         <div className="logo">
-          <img src="/images/burger.png" height="100" alt="Restaurant Logo" />
+          <img
+            src={`${process.env.PUBLIC_URL}/images/burger.png`}
+            height="100"
+            alt="Restaurant Logo"
+          />
         </div>
         <div className="hamburger" onClick={toggleMenu}>
           &#9776;
@@ -41,7 +45,10 @@ function Home() {
           </ul>
           <div className="cart">
             <a href="/cart">
-              <img src="/images/shopping_cart.png" alt="cart" />
+              <img
+                src={`${process.env.PUBLIC_URL}/images/shopping_cart.png`}
+                alt="cart"
+              />
             </a>
             <span className="cart-value">{cart}</span>
           </div>
@@ -56,21 +63,21 @@ function Home() {
       <section
         className="hero"
         style={{
-            backgroundImage: `url('/images/skovorodka_logo.jpg')`,
-            backgroundSize: 'cover', 
-            backgroundPosition: 'center', 
-            backgroundRepeat: 'no-repeat', 
-            height: '350px', 
-            width: '100%',
-            borderRadius: '8px', 
-            position: 'relative', 
-          }}
+          backgroundImage: `url('${process.env.PUBLIC_URL}/images/skovorodka_logo.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          height: '350px',
+          width: '100%',
+          borderRadius: '8px',
+          position: 'relative',
+        }}
       >
         <img
-          src="/images/skovorodka_logo.jpg"
+          src={`${process.env.PUBLIC_URL}/images/skovorodka_logo.jpg`}
           alt="Restaurant Logo"
           style={{
-            display: 'none' 
+            display: 'none',
           }}
         />
       </section>
