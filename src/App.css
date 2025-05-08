@@ -142,111 +142,107 @@ nav ul li a:hover {
 
 /*changing menu display*/
 .menu{
-    padding: 1px 20px;
+    padding: 20px;
     text-align: center;
     background-color: #752d2d;
-    font-family: 'cursive','Times New Roman', Times, serif;
-  }
+    font-family: 'Cursive', 'Times New Roman', Times, serif;
+    color: goldenrod;
+}
 
 .menu h1{
     font-size: 4rem;
     color: goldenrod;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .menu-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: center;
-    padding: 20px;
-    margin-bottom: 70px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
+/* Individual Card */
 .card {
-  background-color: #994C00;
-  border: 3px solid goldenrod;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-style: italic;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 30px 20px;
-  text-align: center;
-  gap: 20px; 
+    background-color: #994C00;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Image */
 .card img {
-  width: 100%;
-  max-width: 375px;
-  height: 350px;
-  border: 2px solid goldenrod;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  object-fit: cover;
-  border-radius: 5px; 
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid goldenrod;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
 }
 
-.card img:hover{
+.card img:hover {
     transform: scale(1.1);
 }
 
+/* Card Title */
 .card h2 {
-  font-size: 2rem;
-  color: goldenrod;
-  background-color: #752d2d;
-  padding: 10px 20px;
-  border: 2px solid goldenrod;
-  border-radius: 10px;
-  margin: 10px 0;
+    font-size: 1.8rem;
+    color: goldenrod;
+    background-color: #752d2d;
+    padding: 10px 20px;
+    border: 2px solid goldenrod;
+    border-radius: 8px;
+    margin: 15px 0;
 }
 
-.card h3 {
-  font-size: 1.6rem;
-  color: goldenrod;
-  margin-top: 15px;
-}
-
+/* Card Description */
 .card p {
-  font-size: 1.3rem;
-  color: goldenrod;
-  opacity: 85%;
-  background-color: #994C00;
-  padding: 12px;
-  border: 2px solid goldenrod;
-  border-radius: 10px;
+    font-size: 1.2rem;
+    color: goldenrod;
+    opacity: 0.9;
+    background-color: #994C00;
+    padding: 10px;
+    border: 2px solid goldenrod;
+    border-radius: 8px;
 }
 
-data{
-    display: none; 
-}
-
-/*add to cart button*/
-
+/* Add to Cart Button */
 .card .add-to-cart {
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: #752d2d;
     color: goldenrod;
     border: 2px solid goldenrod;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    padding: 20px 80px;
+    padding: 10px 40px;
     white-space: nowrap;
 }
 
 .card .add-to-cart:hover {
     background-color: #3b3024;
+    transform: scale(1.05);
 }
-
 
 /*Gallery images*/
 
@@ -719,24 +715,255 @@ footer{
 }
 
 @media (max-width: 768px) {
-  nav {
-    display: none;
+  /* Header */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
 
-  nav.open {
-    display: block;
+  header .logo img {
+    height: 70px;
   }
 
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 30px;
-  }
-
+  /* Navigation */
   nav ul {
     flex-direction: column;
-    background-color: #fff;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  /* Title Section */
+  .title-section h1 {
+    font-size: 1.8rem;
     padding: 10px;
+  }
+
+  /* Menu Cards */
+  .menu-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  /* Card */
+  .card {
+    padding: 15px;
+  }
+
+  .card img {
+    max-width: 100%;
+    height: 200px;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .card .add-to-cart {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+
+  /* Gallery */
+  .gallery {
+    padding: 10px;
+  }
+
+  .gallery h1 {
+    font-size: 1.5rem;
+  }
+
+  .slide {
+    height: 300px;
+  }
+
+  .slide img {
+    height: 100%;
+  }
+
+  /* About Section */
+  .about {
+    padding: 30px 10px;
+  }
+
+  .about h1 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .about img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Contact Section */
+  .contact {
+    padding: 20px 10px;
+  }
+
+  .contact h1 {
+    font-size: 2rem;
+  }
+
+  .contact-content {
+    padding: 10px;
+  }
+
+  .Google-maps iframe {
+    max-height: 300px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 10px 0;
+  }
+
+  .social-media h3 {
+    font-size: 1.5rem;
+  }
+
+  .social-media a {
+    font-size: 1.2rem;
+  }
+
+  .hours h3 {
+    font-size: 1.2rem;
+  }
+
+  .hours p {
+    font-size: 1rem;
+  }
+
+  /* Shopping Cart */
+  .cart-body {
+    height: auto;
+    padding: 10px;
+  }
+
+  .cart-total {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .cart-total h4 {
+    font-size: 1.2rem;
+  }
+
+  .cart-total button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  #cart-table th, #cart-table td {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  .cart-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Very Small Screens */
+@media (max-width: 480px) {
+  /* Header */
+  header {
+    padding: 5px;
+  }
+
+  header .logo img {
+    height: 50px;
+  }
+
+  /* Navigation */
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  /* Title Section */
+  .title-section h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Menu Cards */
+  .menu-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Card */
+  .card img {
+    height: 150px;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card .add-to-cart {
+    font-size: 0.8rem;
+    padding: 5px 15px;
+  }
+
+  /* Gallery */
+  .slide {
+    height: 200px;
+  }
+
+  /* About Section */
+  .about h1 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+
+  /* Contact Section */
+  .contact h1 {
+    font-size: 1.5rem;
+  }
+
+  .Google-maps iframe {
+    max-height: 200px;
+  }
+
+  /* Footer */
+  .social-media h3 {
+    font-size: 1.2rem;
+  }
+
+  .social-media a {
+    font-size: 1rem;
+  }
+
+  .hours h3 {
+    font-size: 1rem;
+  }
+
+  .hours p {
+    font-size: 0.8rem;
   }
 }
 
