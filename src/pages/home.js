@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import useGlobalLogic from './GlobalLogic';
 
 function Home() {
@@ -38,18 +39,18 @@ function Home() {
         </div>
         <nav className={menuActive ? 'active' : ''}>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/menu">Menu</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/" onClick={() => setMenuActive(false)}>Home</Link></li>
+            <li><Link to="/menu" onClick={() => setMenuActive(false)}>Menu</Link></li>
+            <li><Link to="/about" onClick={() => setMenuActive(false)}>About</Link></li>
+            <li><Link to="/contact" onClick={() => setMenuActive(false)}>Contact</Link></li>
           </ul>
           <div className="cart">
-            <a href="/cart">
+            <Link to="/cart">
               <img
                 src={`${process.env.PUBLIC_URL}/images/shopping_cart.png`}
                 alt="cart"
               />
-            </a>
+            </Link>
             <span className="cart-value">{cart}</span>
           </div>
         </nav>

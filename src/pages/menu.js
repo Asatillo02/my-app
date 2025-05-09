@@ -18,27 +18,27 @@ function Menu() {
           name: 'Smoked Semga',
           image: '/images/Semga.jpg',
           description: "Cold-smoked steelhead trout that's cured with salt.",
-          price: 19.99, // Now numeric
+          price: 19.99, 
         },
         {
           name: 'Deluxe Charcuterie Platter',
           image: '/images/charcuterie Board.jpg',
           description:
             'Elegant set of dry-cured salami, assorted cheeses, Prosciutto, berries, grapes, crackers, nuts.',
-          price: 33.99, // Now numeric
+          price: 33.99,
         },
         {
           name: 'Eggplant Caviar',
           image: '/images/eggplant caviar.jpg',
           description:
             'An eggplant-based spread, side, or dip. Made with roasted eggplant with a hint of garlic.',
-          price: 14.99, // Now numeric
+          price: 14.99, 
         },
         {
           name: 'Basturma',
           image: '/images/Basturma.jpg',
           description: "A cured, air-dried beef that's seasoned with paprika.",
-          price: 19.99, // Now numeric
+          price: 19.99,
         },
       ],
     },
@@ -50,21 +50,21 @@ function Menu() {
           image: '/images/blintzes.jpg',
           description:
             'Crispy pan-fried pocket-shaped pancakes filled with seasoned ground beef or chicken.',
-          price: 13.99, // Now numeric
+          price: 13.99,
         },
         {
           name: 'Pan-Fried Potatoes w/ Mushrooms',
           image: '/images/pan fried potatoes.jpg',
           description:
             'Fried and sliced potatoes with mushrooms seasoned with salt, pepper, and spices.',
-          price: 22.99, // Now numeric
+          price: 22.99, 
         },
         {
           name: 'Mushroom Julien w/ Baked Cheese',
           image: '/images/mushroom julien.jpg',
           description:
             'Sautéed mushrooms cooked in a creamy sauce, typically with onions and garlic, topped with melted cheese.',
-          price: 16.50, // Now numeric
+          price: 16.50,
         },
       ],
     },
@@ -75,19 +75,19 @@ function Menu() {
           name: 'Soda',
           image: '/images/soda.jpg',
           description: 'All varieties of family or kid-sized soda.',
-          price: 3.99, // Now numeric
+          price: 3.99,
         },
         {
           name: 'Coffee',
           image: '/images/coffee.jpg',
           description: 'Available: A cup of espresso, black, or regular coffee.',
-          price: 3.49, // Now numeric
+          price: 3.49,
         },
         {
           name: 'Tea',
           image: '/images/Tea.jpg',
           description: 'Available: Green, raspberry, black.',
-          price: 2.99, // Now numeric
+          price: 2.99,
         },
       ],
     },
