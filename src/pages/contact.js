@@ -33,7 +33,7 @@ function Contact() {
     `;
     
     // Open the default email client with pre-filled values
-    window.location.href = `mailto:your-email@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:alutful000@citymail.cuny.edu?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     // Reset form after submission
     setFormData({ name: '', email: '', message: '' });
